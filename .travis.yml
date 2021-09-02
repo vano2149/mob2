@@ -3,18 +3,18 @@ dist: focal
 language: python
 
 python:
-  - 3.9
+  - 3
 
 install:
-  - sudo apt -y install python3.9-distutils
+  - sudo apt -y install python3-distutils
   - sudo apt -y install python3-pip
   - sudo apt install -y git
   - git clone https://github.com/kivy/buildozer.git
-  - python3.9 -m site
+  - python3 -m site
   - ls -l
   - cd buildozer
   - ls -l
-  - python3.9 setup.py install
+  - python3 setup.py install
   - ls -l
   - cd ..
   - ls -l
